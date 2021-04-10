@@ -26,7 +26,7 @@ SECRET_KEY = 'f#+$i6$limky20+6$!uyo+*pgf88u9ju-q6!p2a_vsz0geod8g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -128,6 +128,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = 'static'
+
 AUTH_USER_MODEL = 'users.CustomUser' # new
 
 LOGIN_REDIRECT_URL = 'home'
@@ -144,3 +146,4 @@ EMAIL_HOST_USER = 'apikey'
 EMAIL_HOST_PASSWORD = 'sendgrid_password'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
