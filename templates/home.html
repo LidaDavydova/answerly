@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+  <br/>
+  <div class="jumbotron">
+    <h1 class="display-4">Приложение новостей</h1>
+    <p class="lead">Сайт для новостей, построенный на Django.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}"
+      role="button">Просмотр всех статей</a>
+    </p>
+  </div>
+{% endblock content %}
